@@ -1,0 +1,54 @@
+file 26479 1493235536                                           
+version 2
+run Testbench_3-0-20170426-15:38:50-35388
+attr configname Testbench_3
+attr datetime 20170426-15:38:50
+attr experiment Testbench_3
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Toll_road
+attr processid 35388
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.numBooths 3
+param **.queue[*].serviceTime exponential(5.11s)
+param **.source.interArrivalTime exponential(5.854s)
+param **.source.numJobs 1000
+
+vector 0  Toll_road.queue[0]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 2  Toll_road.queue[1]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 4  Toll_road.queue[2]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 3  Toll_road.queue[1]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+vector 6  Toll_road.sink  lifeTime:vector  ETV
+attr interpolationmode  none
+attr title  "lifetime of arrived jobs, vector"
+attr unit  s
+vector 5  Toll_road.queue[2]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+vector 1  Toll_road.queue[0]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+0	1532 1541 0 1478 0 2008.477391397184 59 0 4 53 97
+1	3073 3133 23 1488 23.46854822214 2030.516110902058 104 0 19.815205206144 181.82899498974 1980.578860297
+2	6206 1074 0 1372 0 1859.323133765588 41 0 2 28 36
+3	7280 2932 3 1464 4.659049349728 1988.984821412646 100 0 14.733774204984 114.08808958797 978.14449195311
+4	10212 1457 0 1497 0 2036.372552285795 55 0 3 41 59
+5	11669 2899 11 1497 15.323770075543 2036.372552285795 96 0 16.722966507288 139.1486776413 1254.5698851924
+6	14568 11911 8 1500 14.16162687343 2038.001830043185 300 0.020727801951 35.040398769749 1891.9333908832 22383.279701598

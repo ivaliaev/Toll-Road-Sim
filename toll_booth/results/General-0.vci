@@ -1,0 +1,54 @@
+file 87433 1493234918                                           
+version 2
+run General-0-20170426-15:28:23-32888
+attr configname General
+attr datetime 20170426-15:28:23
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Toll_road
+attr processid 32888
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.numBooths 3
+param **.queue[*].serviceTime exponential(5.11s)
+param **.source.interArrivalTime exponential(5.854s)
+param **.source.numJobs 1000
+
+vector 0  Toll_road.queue[0]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 2  Toll_road.queue[1]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 4  Toll_road.queue[2]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 3  Toll_road.queue[1]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+vector 6  Toll_road.sink  lifeTime:vector  ETV
+attr interpolationmode  none
+attr title  "lifetime of arrived jobs, vector"
+attr unit  s
+vector 5  Toll_road.queue[2]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+vector 1  Toll_road.queue[0]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+0	1520 5222 0 4877 0 6154.615329718294 191 0 4 155 243
+1	6742 11034 23 4998 23.46854822214 6372.988052303094 356 0 20.384764045542 630.18519081956 6886.2713765847
+2	17776 4029 0 4887 0 6161.43309072489 147 0 2 109 145
+3	21805 9452 3 4971 4.659049349728 6335.58383161619 309 0 20.918894276098 385.0245731489 3700.7220043532
+4	31257 5137 0 4947 0 6296.222810214041 187 0 4 155 245
+5	36394 10430 11 4988 15.323770075543 6354.519368479078 335 0 44.007591069374 681.13471245111 11051.108049358
+6	46824 40609 8 5000 14.16162687343 6380.522088548134 1000 0.002790672991 45.65388164383 6760.7140625906 87697.375243294

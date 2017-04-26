@@ -1,0 +1,54 @@
+file 17587 1493235500                                           
+version 2
+run Testbench_2-0-20170426-15:38:16-34528
+attr configname Testbench_2
+attr datetime 20170426-15:38:16
+attr experiment Testbench_2
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Toll_road
+attr processid 34528
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.numBooths 3
+param **.queue[*].serviceTime exponential(5.11s)
+param **.source.interArrivalTime exponential(5.854s)
+param **.source.numJobs 1000
+
+vector 0  Toll_road.queue[0]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 2  Toll_road.queue[1]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 4  Toll_road.queue[2]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 3  Toll_road.queue[1]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+vector 6  Toll_road.sink  lifeTime:vector  ETV
+attr interpolationmode  none
+attr title  "lifetime of arrived jobs, vector"
+attr unit  s
+vector 5  Toll_road.queue[2]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+vector 1  Toll_road.queue[0]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+0	1532 1094 0 987 0 1334.370146736479 43 0 4 41 81
+1	2626 2167 23 987 23.46854822214 1334.370146736479 73 0 19.815205206144 139.30475997237 1703.5843498612
+2	4793 574 0 980 0 1329.115091402294 23 0 2 15 19
+3	5367 1832 3 993 4.659049349728 1338.610551589034 65 0 10.331842742659 44.643474029898 250.04011280197
+4	7199 785 0 912 0 1254.180623610332 31 0 3 23 35
+5	7984 1795 11 996 15.323770075543 1341.936621600862 62 0 16.722966507288 71.94780707697 656.35790899873
+6	9779 7808 8 1000 14.16162687343 1347.449938103295 200 0.020727801951 35.040398769749 1204.3855412114 13970.674941364

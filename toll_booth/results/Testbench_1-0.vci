@@ -1,0 +1,54 @@
+file 9903 1493234665                                            
+version 2
+run Testbench_1-0-20170426-15:24:20-4052
+attr configname Testbench_1
+attr datetime 20170426-15:24:20
+attr experiment Testbench_1
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Toll_road
+attr processid 4052
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.numBooths 3
+param **.queue[*].serviceTime exponential(5.11s)
+param **.source.interArrivalTime exponential(5.854s)
+param **.source.numJobs 100
+
+vector 0  Toll_road.queue[0]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 2  Toll_road.queue[1]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 4  Toll_road.queue[2]  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 3  Toll_road.queue[1]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+vector 6  Toll_road.sink  lifeTime:vector  ETV
+attr interpolationmode  none
+attr title  "lifetime of arrived jobs, vector"
+attr unit  s
+vector 5  Toll_road.queue[2]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+vector 1  Toll_road.queue[0]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+0	1529 622 0 327 0 411.59391303927 25 0 4 30 68
+1	2151 1000 23 491 23.46854822214 648.412409121327 33 0 19.815205206144 101.57494664838 1486.701206182
+2	3151 261 0 497 0 659.048147944465 11 0 1 5 5
+3	3412 727 3 497 4.659049349728 659.048147944465 26 0 10.331842742659 23.874842583199 158.24766221753
+4	4139 680 0 442 0 575.418118130152 27 0 3 21 33
+5	4819 1216 11 486 15.323770075543 641.414311754311 41 0 16.722966507288 64.074480317253 620.58059047336
+6	6035 3868 8 500 14.16162687343 668.944057628045 100 0.103171554827 35.040398769749 712.14771942166 9530.9656840799
