@@ -27,27 +27,27 @@ network Toll_road
     parameters:
         int numBooths;
 
-        @display("bgb=528,141");
+        @display("bgb=529.975,104.4");
     submodules:
         source: Source {
-            @display("p=60,79");
+            @display("p=54.375,45.675");
         }
-//        queue[numBooths]: Queue {
-//            @display("p=334,79");
-//        }
+        //        queue[numBooths]: Queue {
+        //            @display("p=334,79");
+        //        }
         queue[numBooths]: My_queue_type {
-            @display("p=334,79");
+            @display("p=328.425,45.675");
         }
 
         sink: Sink {
-            @display("p=457,79");
+            @display("p=451.675,45.675");
         }
         router: Router {
-            @display("p=167,79");
+            @display("p=161.675,45.675");
         }
-//        my_queue_type: My_queue_type {
-//            @display("p=255.925,27.55");
-//        }
+    //        my_queue_type: My_queue_type {
+    //            @display("p=255.925,27.55");
+    //        }
     connections:
         source.out --> router.in++;
         for i=0..numBooths-1 {

@@ -1,14 +1,14 @@
 version 2
-run Testbench_1-0-20170427-13:16:28-11844
+run Testbench_1-0-20170427-13:30:42-43460
 attr configname Testbench_1
-attr datetime 20170427-13:16:28
+attr datetime 20170427-13:30:42
 attr experiment Testbench_1
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
 attr network Toll_road
-attr processid 11844
+attr processid 43460
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -40,6 +40,9 @@ attr title  "jobs processed, count"
 scalar Toll_road.queue[0] 	queueLength:timeavg 	4.6532753102878
 attr interpolationmode  sample-hold
 attr title  "queue length, timeavg"
+scalar Toll_road.queue[0] 	queueLength:mean 	5.729398012858
+attr interpolationmode  sample-hold
+attr title  "queue length, mean"
 scalar Toll_road.queue[0] 	queueLength:max 	20
 attr interpolationmode  sample-hold
 attr title  "queue length, max"
