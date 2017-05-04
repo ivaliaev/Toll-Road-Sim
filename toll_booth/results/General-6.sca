@@ -1,0 +1,155 @@
+version 2
+run General-6-20170504-11:38:02-97232
+attr configname General
+attr datetime 20170504-11:38:02
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=6
+attr measurement ""
+attr network Toll_road
+attr processid 97232
+attr repetition 6
+attr replication #6
+attr resultdir results
+attr runnumber 6
+attr seedset 6
+param **.numBooths 3
+param **.queue[*].serviceTime exponential(5.11s)
+param **.source.interArrivalTime exponential(5.854s)
+param **.source.numJobs 1000
+
+scalar Toll_road.source 	created:last 	1000
+attr interpolationmode  none
+attr title  "the number of jobs created, last"
+scalar Toll_road.queue[0] 	busy:timeavg 	0.25544441757804
+attr interpolationmode  sample-hold
+attr title  "server busy state, timeavg"
+scalar Toll_road.queue[0] 	queueingTime:mean 	1.4282142498403
+attr interpolationmode  none
+attr title  "queueing time at dequeue, mean"
+attr unit  s
+scalar Toll_road.queue[0] 	queueingTime:max 	31.798156863223
+attr interpolationmode  none
+attr title  "queueing time at dequeue, max"
+attr unit  s
+scalar Toll_road.queue[0] 	jobsProcessed:count 	310
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, count"
+scalar Toll_road.queue[0] 	queueLength:timeavg 	0.070967238491909
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar Toll_road.queue[0] 	queueLength:mean 	0.72661870503597
+attr interpolationmode  sample-hold
+attr title  "queue length, mean"
+scalar Toll_road.queue[0] 	queueLength:max 	4
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar Toll_road.queue[0] 	dropped:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar Toll_road.queue[1] 	busy:timeavg 	0.26524228705683
+attr interpolationmode  sample-hold
+attr title  "server busy state, timeavg"
+scalar Toll_road.queue[1] 	queueingTime:mean 	1.9451783094463
+attr interpolationmode  none
+attr title  "queueing time at dequeue, mean"
+attr unit  s
+scalar Toll_road.queue[1] 	queueingTime:max 	27.85478936657
+attr interpolationmode  none
+attr title  "queueing time at dequeue, max"
+attr unit  s
+scalar Toll_road.queue[1] 	jobsProcessed:count 	340
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, count"
+scalar Toll_road.queue[1] 	queueLength:timeavg 	0.10600862111731
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar Toll_road.queue[1] 	queueLength:mean 	0.81081081081081
+attr interpolationmode  sample-hold
+attr title  "queue length, mean"
+scalar Toll_road.queue[1] 	queueLength:max 	4
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar Toll_road.queue[1] 	dropped:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar Toll_road.queue[2] 	busy:timeavg 	0.30256533814398
+attr interpolationmode  sample-hold
+attr title  "server busy state, timeavg"
+scalar Toll_road.queue[2] 	queueingTime:mean 	3.1751075770118
+attr interpolationmode  none
+attr title  "queueing time at dequeue, mean"
+attr unit  s
+scalar Toll_road.queue[2] 	queueingTime:max 	50.731175722145
+attr interpolationmode  none
+attr title  "queueing time at dequeue, max"
+attr unit  s
+scalar Toll_road.queue[2] 	jobsProcessed:count 	350
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, count"
+scalar Toll_road.queue[2] 	queueLength:timeavg 	0.17812682998877
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar Toll_road.queue[2] 	queueLength:mean 	1.1321585903084
+attr interpolationmode  sample-hold
+attr title  "queue length, mean"
+scalar Toll_road.queue[2] 	queueLength:max 	7
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar Toll_road.queue[2] 	dropped:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar Toll_road.sink 	generation:mean 	0
+attr interpolationmode  none
+attr title  "the generation of the arrived jobs, mean"
+scalar Toll_road.sink 	generation:max 	0
+attr interpolationmode  none
+attr title  "the generation of the arrived jobs, max"
+scalar Toll_road.sink 	delaysVisited:mean 	0
+attr interpolationmode  none
+attr title  "the total number of delays visited by arrived jobs, mean"
+scalar Toll_road.sink 	delaysVisited:max 	0
+attr interpolationmode  none
+attr title  "the total number of delays visited by arrived jobs, max"
+scalar Toll_road.sink 	queuesVisited:mean 	0.274
+attr interpolationmode  none
+attr title  "the total number of queues visited by arrived jobs, mean"
+scalar Toll_road.sink 	queuesVisited:max 	1
+attr interpolationmode  none
+attr title  "the total number of queues visited by arrived jobs, max"
+scalar Toll_road.sink 	totalServiceTime:mean 	5.1360585580725
+attr interpolationmode  none
+attr title  "the total time spent  by arrived jobs, mean"
+attr unit  s
+scalar Toll_road.sink 	totalServiceTime:max 	56.919086180027
+attr interpolationmode  none
+attr title  "the total time spent  by arrived jobs, max"
+attr unit  s
+scalar Toll_road.sink 	totalDelayTime:mean 	0
+attr interpolationmode  none
+attr title  "the total time spent in delay nodes by arrived jobs, mean"
+attr unit  s
+scalar Toll_road.sink 	totalDelayTime:max 	0
+attr interpolationmode  none
+attr title  "the total time spent in delay nodes by arrived jobs, max"
+attr unit  s
+scalar Toll_road.sink 	totalQueueingTime:mean 	2.2153946946164
+attr interpolationmode  none
+attr title  "the total time spent in queues by arrived jobs, mean"
+attr unit  s
+scalar Toll_road.sink 	totalQueueingTime:max 	50.731175722145
+attr interpolationmode  none
+attr title  "the total time spent in queues by arrived jobs, max"
+attr unit  s
+scalar Toll_road.sink 	lifeTime:mean 	7.3514532526889
+attr interpolationmode  none
+attr title  "lifetime of arrived jobs, mean"
+attr unit  s
+scalar Toll_road.sink 	lifeTime:max 	64.682067138422
+attr interpolationmode  none
+attr title  "lifetime of arrived jobs, max"
+attr unit  s

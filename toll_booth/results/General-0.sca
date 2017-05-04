@@ -1,14 +1,14 @@
 version 2
-run General-0-20170426-15:28:23-32888
+run General-0-20170504-11:37:56-96972
 attr configname General
-attr datetime 20170426-15:28:23
+attr datetime 20170504-11:37:56
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
 attr network Toll_road
-attr processid 32888
+attr processid 96972
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -40,6 +40,9 @@ attr title  "jobs processed, count"
 scalar Toll_road.queue[0] 	queueLength:timeavg 	0.098711042759366
 attr interpolationmode  sample-hold
 attr title  "queue length, timeavg"
+scalar Toll_road.queue[0] 	queueLength:mean 	0.81151832460733
+attr interpolationmode  sample-hold
+attr title  "queue length, mean"
 scalar Toll_road.queue[0] 	queueLength:max 	4
 attr interpolationmode  sample-hold
 attr title  "queue length, max"
@@ -64,6 +67,9 @@ attr title  "jobs processed, count"
 scalar Toll_road.queue[1] 	queueLength:timeavg 	0.060309537033202
 attr interpolationmode  sample-hold
 attr title  "queue length, timeavg"
+scalar Toll_road.queue[1] 	queueLength:mean 	0.74149659863946
+attr interpolationmode  sample-hold
+attr title  "queue length, mean"
 scalar Toll_road.queue[1] 	queueLength:max 	2
 attr interpolationmode  sample-hold
 attr title  "queue length, max"
@@ -88,6 +94,9 @@ attr title  "jobs processed, count"
 scalar Toll_road.queue[2] 	queueLength:timeavg 	0.10669168159634
 attr interpolationmode  sample-hold
 attr title  "queue length, timeavg"
+scalar Toll_road.queue[2] 	queueLength:mean 	0.82887700534759
+attr interpolationmode  sample-hold
+attr title  "queue length, mean"
 scalar Toll_road.queue[2] 	queueLength:max 	4
 attr interpolationmode  sample-hold
 attr title  "queue length, max"

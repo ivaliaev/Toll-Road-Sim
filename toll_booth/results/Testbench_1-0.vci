@@ -1,15 +1,15 @@
-file 81173 1493314258                                           
+file 47548 1493913009                                           
 version 2
-run Testbench_1-0-20170427-13:30:42-43460
+run Testbench_1-0-20170504-11:50:09-97336
 attr configname Testbench_1
-attr datetime 20170427-13:30:42
+attr datetime 20170504-11:50:09
 attr experiment Testbench_1
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
 attr network Toll_road
-attr processid 43460
+attr processid 97336
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -20,13 +20,23 @@ param **.queue[*].serviceTime exponential(5.11s)
 param **.source.interArrivalTime exponential(5.854s)
 param **.source.numJobs 1000
 
+vector 1  Toll_road.queue[1]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+vector 3  Toll_road.sink  lifeTime:vector  ETV
+attr interpolationmode  none
+attr title  "lifetime of arrived jobs, vector"
+attr unit  s
+vector 2  Toll_road.queue[2]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
 vector 0  Toll_road.queue[0]  jobsProcessed:vector  ETV
 attr interpolationmode  none
 attr source  queueingTime
 attr title  "jobs processed, vector"
-vector 1  Toll_road.sink  lifeTime:vector  ETV
-attr interpolationmode  none
-attr title  "lifetime of arrived jobs, vector"
-attr unit  s
-0	844 39184 3 4998 4.659049349728 6147.179736528172 1000 0 113.59280957636 28618.596973313 1526434.1011032
-1	40028 41145 8 5001 14.16162687343 6150.204977135331 1000 0.113537311816 118.86221183985 33945.738856879 1888158.1214503
+0	1148 7248 23 3268 23.46854822214 4169.154928352913 238 0 19.815205206144 344.60151575864 3633.7936703451
+1	8396 6131 3 3221 4.659049349728 4089.31017432278 203 0 14.733774204984 227.43629339254 1862.2282213358
+2	14527 6560 11 3273 15.323770075543 4189.184604464966 214 0 31.841628466102 330.28101431879 4094.9622531065
+3	21087 26461 8 3276 14.16162687343 4200.182681336429 655 0.002790672991 35.100565861719 4093.1673441226 48229.636795558
