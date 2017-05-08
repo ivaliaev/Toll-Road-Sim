@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
   <inputs>
     <inputs name="/toll_booth/results/Testbench_2-*.vec"/>
     <inputs name="/toll_booth/results/Testbench_2-*.sca"/>
   </inputs>
-  <datasets/>
-  <chartSheets/>
+  <datasets>
+    <datasets name="allJobsProcessed">
+      <items xsi:type="scave:Add" filterPattern="name(jobsProcessed:count)"/>
+      <items xsi:type="scave:BarChart" name="BarSum">
+        <properties name="Y.Axis.Min" value="3320.0"/>
+        <properties name="Y.Axis.Max" value="3338.0"/>
+      </items>
+    </datasets>
+    <datasets name="avgJobsProcessed" basedOn="//@datasets/@datasets.0">
+      <items xsi:type="scave:ComputeScalar" scalarName="" valueExpr="" moduleExpr="" groupByExpr="" averageReplications="true" computeConfidenceInterval="true" confidenceLevel="0.9">
+        <filters xsi:type="scave:Select" filterPattern="&lt;unnamed>"/>
+      </items>
+    </datasets>
+    <datasets name="queue1jobsProcessed">
+      <items xsi:type="scave:Add" filterPattern="module(Toll_road.queue[1]) AND name(jobsProcessed:count)"/>
+    </datasets>
+  </datasets>
+  <chartSheets>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.1"/>
+  </chartSheets>
 </scave:Analysis>

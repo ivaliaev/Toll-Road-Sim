@@ -1,15 +1,15 @@
-file 17587 1493235500                                           
+file 762325 1494261056                                          
 version 2
-run Testbench_2-0-20170426-15:38:16-34528
+run Testbench_2-0-20170508-12:30:56-123464
 attr configname Testbench_2
-attr datetime 20170426-15:38:16
+attr datetime 20170508-12:30:56
 attr experiment Testbench_2
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
 attr network Toll_road
-attr processid 34528
+attr processid 123464
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -20,35 +20,23 @@ param **.queue[*].serviceTime exponential(5.11s)
 param **.source.interArrivalTime exponential(5.854s)
 param **.source.numJobs 1000
 
-vector 0  Toll_road.queue[0]  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 2  Toll_road.queue[1]  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 4  Toll_road.queue[2]  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 3  Toll_road.queue[1]  jobsProcessed:vector  ETV
+vector 1  Toll_road.queue[1]  jobsProcessed:vector  ETV
 attr interpolationmode  none
 attr source  queueingTime
 attr title  "jobs processed, vector"
-vector 6  Toll_road.sink  lifeTime:vector  ETV
+vector 3  Toll_road.sink  lifeTime:vector  ETV
 attr interpolationmode  none
 attr title  "lifetime of arrived jobs, vector"
 attr unit  s
-vector 5  Toll_road.queue[2]  jobsProcessed:vector  ETV
+vector 2  Toll_road.queue[2]  jobsProcessed:vector  ETV
 attr interpolationmode  none
 attr source  queueingTime
 attr title  "jobs processed, vector"
-vector 1  Toll_road.queue[0]  jobsProcessed:vector  ETV
+vector 0  Toll_road.queue[0]  jobsProcessed:vector  ETV
 attr interpolationmode  none
 attr source  queueingTime
 attr title  "jobs processed, vector"
-0	1532 1094 0 987 0 1334.370146736479 43 0 4 41 81
-1	2626 2167 23 987 23.46854822214 1334.370146736479 73 0 19.815205206144 139.30475997237 1703.5843498612
-2	4793 574 0 980 0 1329.115091402294 23 0 2 15 19
-3	5367 1832 3 993 4.659049349728 1338.610551589034 65 0 10.331842742659 44.643474029898 250.04011280197
-4	7199 785 0 912 0 1254.180623610332 31 0 3 23 35
-5	7984 1795 11 996 15.323770075543 1341.936621600862 62 0 16.722966507288 71.94780707697 656.35790899873
-6	9779 7808 8 1000 14.16162687343 1347.449938103295 200 0.020727801951 35.040398769749 1204.3855412114 13970.674941364
+0	1150 111093 23 49976 23.46854822214 58187.442796340439 3330 0 45.514894056781 7164.4287754678 96491.653917771
+1	112243 111635 3 49998 4.659049349728 58227.567106840615 3343 0 39.704183333949 6438.3924822937 81010.305056059
+2	223878 112009 11 49986 15.323770075543 58200.408245421397 3327 0 47.918622264635 7670.9517248178 107984.98428497
+3	335887 426438 8 50001 14.16162687343 58230.07584452932 10000 0.000102354093 58.945683833343 72577.61768544 1027371.891144
