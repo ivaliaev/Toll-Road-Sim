@@ -1,15 +1,15 @@
-file 47786 1493913011                                           
+file 2605 1494976646                                            
 version 2
-run Testbench_1-8-20170504-11:50:11-97652
+run Testbench_1-8-20170516-19:17:26-46440
 attr configname Testbench_1
-attr datetime 20170504-11:50:11
+attr datetime 20170516-19:17:26
 attr experiment Testbench_1
 attr inifile omnetpp.ini
-attr iterationvars ""
-attr iterationvars2 $repetition=8
-attr measurement ""
+attr iterationvars $0=25
+attr iterationvars2 "$0=25, $repetition=8"
+attr measurement $0=25
 attr network Toll_road
-attr processid 97652
+attr processid 46440
 attr repetition 8
 attr replication #8
 attr resultdir results
@@ -20,23 +20,13 @@ param **.queue[*].serviceTime exponential(5.11s)
 param **.source.interArrivalTime exponential(5.854s)
 param **.source.numJobs 1000
 
-vector 1  Toll_road.queue[1]  jobsProcessed:vector  ETV
-attr interpolationmode  none
-attr source  queueingTime
-attr title  "jobs processed, vector"
-vector 2  Toll_road.queue[2]  jobsProcessed:vector  ETV
-attr interpolationmode  none
-attr source  queueingTime
-attr title  "jobs processed, vector"
-vector 3  Toll_road.sink  lifeTime:vector  ETV
-attr interpolationmode  none
-attr title  "lifetime of arrived jobs, vector"
-attr unit  s
 vector 0  Toll_road.queue[0]  jobsProcessed:vector  ETV
 attr interpolationmode  none
 attr source  queueingTime
 attr title  "jobs processed, vector"
-0	1148 6883 13 3271 24.072677146855 3852.361883182782 221 0 28.371119585254 397.80818169769 4965.1189193623
-1	8031 6285 3 3263 12.09995486651 3837.964879432544 207 0 37.827000978255 341.41864609881 5396.9599495374
-2	14316 7016 6 3268 12.16538306306 3850.383763370211 227 0 28.338136432923 546.36414662684 8008.5605942294
-3	21332 26454 8 3276 13.498560392494 3856.960970131579 655 0.002632488396 40.055651365727 4536.6633587444 64276.063398539
+vector 1  Toll_road.sink  lifeTime:vector  ETV
+attr interpolationmode  none
+attr title  "lifetime of arrived jobs, vector"
+attr unit  s
+0	859 804 3 122 12.09995486651 142.05717002687 25 0 11.871607229666 86.962187493799 690.64535190489
+1	1663 942 8 126 13.498560392494 147.649889508687 25 0.809621530469 15.122250182738 174.43466329833 1596.2921573717

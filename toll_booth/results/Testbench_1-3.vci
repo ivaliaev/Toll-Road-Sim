@@ -1,15 +1,15 @@
-file 47831 1493913010                                           
+file 2651 1494976647                                            
 version 2
-run Testbench_1-3-20170504-11:50:09-92424
+run Testbench_1-3-20170516-19:17:26-3928
 attr configname Testbench_1
-attr datetime 20170504-11:50:09
+attr datetime 20170516-19:17:26
 attr experiment Testbench_1
 attr inifile omnetpp.ini
-attr iterationvars ""
-attr iterationvars2 $repetition=3
-attr measurement ""
+attr iterationvars $0=25
+attr iterationvars2 "$0=25, $repetition=3"
+attr measurement $0=25
 attr network Toll_road
-attr processid 92424
+attr processid 3928
 attr repetition 3
 attr replication #3
 attr resultdir results
@@ -20,23 +20,13 @@ param **.queue[*].serviceTime exponential(5.11s)
 param **.source.interArrivalTime exponential(5.854s)
 param **.source.numJobs 1000
 
-vector 1  Toll_road.queue[1]  jobsProcessed:vector  ETV
-attr interpolationmode  none
-attr source  queueingTime
-attr title  "jobs processed, vector"
 vector 0  Toll_road.queue[0]  jobsProcessed:vector  ETV
 attr interpolationmode  none
 attr source  queueingTime
 attr title  "jobs processed, vector"
-vector 3  Toll_road.sink  lifeTime:vector  ETV
+vector 1  Toll_road.sink  lifeTime:vector  ETV
 attr interpolationmode  none
 attr title  "lifetime of arrived jobs, vector"
 attr unit  s
-vector 2  Toll_road.queue[2]  jobsProcessed:vector  ETV
-attr interpolationmode  none
-attr source  queueingTime
-attr title  "jobs processed, vector"
-0	1148 7029 6 3257 5.114246580129 3712.413708958769 224 0 32.075976550164 499.73641697558 6592.6521421503
-1	8177 6013 3 3272 4.684853116285 3730.188589988029 200 0 13.59782713385 240.795706932 2036.5628739958
-2	14190 7189 14 3241 12.05788199133 3701.108352034668 231 0 33.526871485038 432.99827652959 5913.124470789
-3	21379 26452 11 3276 8.768102499627 3735.113181926697 655 0.006762608189 43.298461566024 4505.3324218865 58514.292162862
+0	857 850 3 122 4.684853116285 141.808750217139 25 0 18.501281144382 132.12071737545 1302.5570512625
+1	1707 944 14 126 14.047717193713 148.197508580671 25 1.533487459979 20.513683844551 254.55803824689 3172.4718342648

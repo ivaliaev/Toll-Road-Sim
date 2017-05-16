@@ -1,15 +1,15 @@
-file 47541 1493913009                                           
+file 2620 1494976646                                            
 version 2
-run Testbench_1-4-20170504-11:50:09-73204
+run Testbench_1-4-20170516-19:17:26-49284
 attr configname Testbench_1
-attr datetime 20170504-11:50:09
+attr datetime 20170516-19:17:26
 attr experiment Testbench_1
 attr inifile omnetpp.ini
-attr iterationvars ""
-attr iterationvars2 $repetition=4
-attr measurement ""
+attr iterationvars $0=25
+attr iterationvars2 "$0=25, $repetition=4"
+attr measurement $0=25
 attr network Toll_road
-attr processid 73204
+attr processid 49284
 attr repetition 4
 attr replication #4
 attr resultdir results
@@ -20,23 +20,13 @@ param **.queue[*].serviceTime exponential(5.11s)
 param **.source.interArrivalTime exponential(5.854s)
 param **.source.numJobs 1000
 
-vector 1  Toll_road.queue[1]  jobsProcessed:vector  ETV
-attr interpolationmode  none
-attr source  queueingTime
-attr title  "jobs processed, vector"
 vector 0  Toll_road.queue[0]  jobsProcessed:vector  ETV
 attr interpolationmode  none
 attr source  queueingTime
 attr title  "jobs processed, vector"
-vector 3  Toll_road.sink  lifeTime:vector  ETV
+vector 1  Toll_road.sink  lifeTime:vector  ETV
 attr interpolationmode  none
 attr title  "lifetime of arrived jobs, vector"
 attr unit  s
-vector 2  Toll_road.queue[2]  jobsProcessed:vector  ETV
-attr interpolationmode  none
-attr source  queueingTime
-attr title  "jobs processed, vector"
-0	1148 6990 6 3252 33.490566281873 3965.927680839207 230 0 37.216767567325 386.61833865379 5924.2628343563
-1	8138 6564 3 3273 19.974739676506 3998.1538910291 215 0 20.106437930646 404.1398789533 4616.7999563932
-2	14702 6362 13 3268 44.819889231544 3992.968057706264 210 0 39.137505063986 387.28216778405 6954.72181984
-3	21064 26477 8 3276 38.372250299404 4007.870116084877 655 0.00463521151 56.356390139517 4513.6454418155 64626.980871518
+0	859 815 3 122 19.974739676506 178.085908054034 25 0 21.325638016571 115.32246729876 1663.9345270179
+1	1674 946 5 126 20.943504932493 180.027540888044 25 0.585125511832 22.814046428532 233.48554190982 3540.8525281526

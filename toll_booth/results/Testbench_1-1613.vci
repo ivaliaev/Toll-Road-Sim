@@ -1,0 +1,32 @@
+file 34479 1494977139                                           
+version 2
+run Testbench_1-1613-20170516-19:25:39-63228
+attr configname Testbench_1
+attr datetime 20170516-19:25:39
+attr experiment Testbench_1
+attr inifile omnetpp.ini
+attr iterationvars $0=425
+attr iterationvars2 "$0=425, $repetition=13"
+attr measurement $0=425
+attr network Toll_road
+attr processid 63228
+attr repetition 13
+attr replication #13
+attr resultdir results
+attr runnumber 1613
+attr seedset 1613
+param **.numBooths 3
+param **.queue[*].serviceTime exponential(5.11s)
+param **.source.interArrivalTime exponential(5.854s)
+param **.source.numJobs 1000
+
+vector 0  Toll_road.queue[0]  jobsProcessed:vector  ETV
+attr interpolationmode  none
+attr source  queueingTime
+attr title  "jobs processed, vector"
+vector 1  Toll_road.sink  lifeTime:vector  ETV
+attr interpolationmode  none
+attr title  "lifetime of arrived jobs, vector"
+attr unit  s
+0	874 16317 3 2123 1.848191709693 2571.853415546596 425 0 154.36227418682 26239.139501203 2818857.7348141
+1	17191 17288 5 2126 10.343961242688 2580.722066623196 425 0.151523285826 157.63000189029 28418.005391652 3112208.3711119
