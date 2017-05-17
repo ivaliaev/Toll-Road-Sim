@@ -5,9 +5,12 @@
     <inputs name="/toll_booth/results/Testbench_1-*.sca"/>
   </inputs>
   <datasets>
-    <datasets name="test">
-      <items xsi:type="scave:Add" filterPattern="name(queueLength:mean)"/>
+    <datasets name="queueingtime:mean">
+      <items xsi:type="scave:Add" filterPattern="name(totalQueueingTime:mean)"/>
+      <items xsi:type="scave:BarChart" name=""/>
     </datasets>
   </datasets>
-  <chartSheets/>
+  <chartSheets>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.1"/>
+  </chartSheets>
 </scave:Analysis>
